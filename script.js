@@ -3,7 +3,7 @@
         function addTextToPage() {
             const text = document.createElement("p");
             text.textContent = "DOM load success";
-            document.body.appendChild(text);
+            document.body.append(text);
         }
 
         // Add an event listener to call the function when the DOM is loaded
