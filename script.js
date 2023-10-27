@@ -1,10 +1,6 @@
 
-        // Function to add "DOM load success" to the page
-        function addTextToPage() {
-            const text = document.createElement("p");
-            text.textContent = "DOM load success";
-            document.body.append(text);
-        }
-
-        // Add an event listener to call the function when the DOM is loaded
-        document.addEventListener("DOMContentLoaded", addTextToPage);
+        document.addEventListener("DOMContentLoaded", ()=>
+			{
+				document.body.innerHTML="DOM load success";
+				
+			});
